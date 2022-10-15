@@ -1,0 +1,39 @@
+n = int(input())
+if n == 1:
+	print("январь")
+	print("зима")
+elif n == 2:
+	print("февраль")
+	print("зима")
+elif n == 12:
+	print("декабрь")
+	print("зима")
+elif n == 3:
+	print("март")
+	print("весна")
+elif n == 4:
+	print("апрель")
+	print("весна")
+elif n == 5:
+	print("май")
+	print("весна")
+elif n == 6:
+	print("июнь")
+	print("лето")
+elif n == 7:
+	print("июль")
+	print("лето")
+elif n == 8:
+	print("август")
+	print("лето")
+elif n == 9:
+	print("сентябрь")
+	print("осень")
+elif n == 10:
+	print("октябрь")
+	print("осень")
+elif n == 11:
+	print("ноябрь")
+	print("осень")
+else:
+	print("ошибка")

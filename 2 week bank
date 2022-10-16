@@ -2,7 +2,7 @@ n = float(input())
 m = float(input())
 l = float(input())
 t = 0
-while n < m:
+while n <= m:
 	n += n*(l/100)
 	t += 1
 print(t)

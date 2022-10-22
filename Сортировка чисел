@@ -1,0 +1,26 @@
+x=input()
+a=list()
+s=list()
+m=list()
+l=0
+for i in range(len(x)):
+	a+=x[i]
+for i in range(len(a)):
+	a[i]=int(a[i])
+
+while a != s:
+	m.append(min(a))
+	a.remove(min(a))
+
+for i in range(len(m)):
+	if m[i]==0:
+		l+=1
+if l>0:
+	m.insert(0, m[l])
+
+if l>0:
+	del m[l+1]
+	
+for i in range(len(m)):
+	print(m[i], end="")
+	

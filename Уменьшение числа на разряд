@@ -1,0 +1,28 @@
+a = str(input())
+
+def last_discharge(a):
+	k=0
+	for i in range(len(a)):
+		if a[i] == '.':
+			k+=i
+	
+	if k!=0:
+		if a[k+1] == '0':
+			h= '1'+str(a[k+1:])
+			g=int(h)-1
+			d=str(g)
+			if d[0]=='1':
+				da = d[1:]
+				fa = (str(a[:k])+'.'+str(da))
+				print(fa)
+			else:
+				print(str(int(a[:k])-1)+'.'+d)
+		else:
+			b=int(a[k+1:])
+			f=str(a[:k])+'.'+str(b-1)
+			print(f)
+	else:
+		print(int(a)-1)
+	
+
+last_discharge(a)

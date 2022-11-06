@@ -1,0 +1,30 @@
+f = open('file.txt', 'w+')
+f.write('hello world' '\n' 'aabb qwerty hello' '\n' 'qwerty world' '\n' 'hello World World')
+
+f = open('file.txt', 'r')
+text = f.read().split()
+text.sort()
+
+
+d={}
+for word in text:
+	d[word]=text.count(word)
+
+m=[]
+l =[]
+for k, v in d.items():
+	m.append(v)
+	l.append(k)
+	
+pr = [(m[i],l[i]) for i in range(len(m))]
+
+t = sorted(pr, key=lambda pr: pr[1].lower())
+
+from operator import itemgetter
+		
+
+y = sorted(t, key=itemgetter(0), reverse=True)
+
+
+for i in y:
+	print(*i)
